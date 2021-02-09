@@ -9,8 +9,11 @@ function saySomething() {
   var conversation = document.getElementById('conversation');
   var answer = answerQuery(message);
 
-  else if (message.indexOf("tea") != -1 || message.indexOf("buscuit") != -1 || message.indexOf("buscuits") != -1)
-    answer = "I like tea and buscuits!"
+  else if (message.indexOf("tea") != -1 || message.indexOf("biscuit") != -1 || message.indexOf("biscuits") != -1)
+    answer = "I like tea and biscuits!"
+  
+    else if (message.indexOf("chocolate") != -1 || message.indexOf("cake") != -1 || message.indexOf("crisps") != -1)
+      answer = "I like chocolate, cake and crisps!"
 
   conversation.innerHTML += "<p><strong>You:</strong> " + message + "</p>";
   conversation.innerHTML += "<p><strong>Useless bot:</strong> " + answer + "</p>";
