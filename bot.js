@@ -9,7 +9,7 @@ function saySomething() { //updated function
   var conversation = document.getElementById('conversation');
   var answer = answerQuery(message);
 
-  else if (message.indexOf("tea") != -1 || message.indexOf("biscuit") != -1 || message.indexOf("biscuits") != -1)
+  if (message.indexOf("tea") != -1 || message.indexOf("biscuit") != -1 || message.indexOf("biscuits") != -1)
     answer = "I like tea and biscuits!"
   
     else if (message.indexOf("chocolate") != -1 || message.indexOf("cake") != -1 || message.indexOf("crisps") != -1)
