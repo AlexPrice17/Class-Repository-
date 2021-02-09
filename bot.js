@@ -4,7 +4,7 @@ function answerQuery(message) {
   return "Sorry Dave, I cannot do that.";
 }
 
-function saySomething() {
+function saySomething() { //updated function
   var message = document.getElementById('message').value.toLowerCase();
   var conversation = document.getElementById('conversation');
   var answer = answerQuery(message);
