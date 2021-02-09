@@ -1,10 +1,13 @@
+function answerQuery(message) {
+  if (message.indexOf("rain") != -1 || message.indexOf("sun") != -1 || message.indexOf("weather") != -1)
+    return "I do not care too much about weather, I'm locked inside a data center.";
+  return "Sorry Dave, I cannot do that.";
+}
+
 function saySomething() {
   var message = document.getElementById('message').value.toLowerCase();
   var conversation = document.getElementById('conversation');
-  var answer = "Sorry Dave, I cannot do that."
-
-  if (message.indexOf("rain") != -1 || message.indexOf("sun") != -1 || message.indexOf("weather") != -1)
-    answer = "I do not care too much about weather, I'm locked inside a data center.";
+  var answer = answerQuery(message);
 
   else if (message.indexOf("tea") != -1 || message.indexOf("buscuit") != -1 || message.indexOf("buscuits") != -1)
     answer = "I like tea and buscuits!"
